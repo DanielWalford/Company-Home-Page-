@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+   background-color: rgba(18, 122, 148, 0.842);
+}
+  
+  body {
+    font-family: "Poppins", "Sans-Serif2";
+  }
+
+  h1, h2, h3, h4, h5, p {
+    color: white;
+  }
+  
+  /* Style the header */
+  a { 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    padding: 20px 5px; 
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+    color: white;
+    }
+    
+    a:hover { 
+    background: white; 
+    color: rgba(18, 122, 148, 0.842);
+    }
+
+    .nav ul {
+      list-style: none; 
+      margin: 0; 
+      padding: 0; 
+      display: flex; 
+      }
+
+    .nav li {
+      flex: 1;
+    }
+
+
+  .navBar {
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  
+  /* Style the header */
+
+  .header {
+    height: 400px;
+    padding: 30px;
+    font-size: 40px;
+    background-image: url(./Images/thomas-bennie-ACoZwVwjElU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    text-align: center;
+    flex: 1;
+  }
+
+  .motto {
+    padding-top: 20px;
+    font-size: 40px;
+  }
+
+  .services {
+    padding-top: 10px;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    background-color: none;
+    flex: 1;
+  }
+
+  
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+    background-color: none;
+  }
+
+  .team {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .service { 
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 350px; /* Should be removed. Only for demonstration */
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: none;
+  }
+
+  .column1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: none;
+  }
+
+  .flights {
+    /* background-image: url(./Images/matteo-raw-GtEobzvRBXU-unsplash.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .bookings {
+    /* background-image: url(./Images/saad-khan-425b2PhNuHA-unsplash.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .excursions {
+    /* background-image: url(./Images/hu-chen-0LwfbRtQ-ac-unsplash.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .meetTheTeam {
+    margin-top: 80px;
+    text-align: center;
+    background-color: none;
+  }
+
+ 
+  
+
+  /* style for form */ 
+.form {
+  padding: 10px;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 16px;
+  height: 500px;
+  background-image: url(./Images/jaman-asad-FQ03xcur9As-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  align-content: center;
+  background-color: none;
+}
+
+button{ 
+  font-weight: bold;
+  box-shadow: 1px 3px black;
+  border-radius: 5px;
+  color: rgba(18, 122, 148, 0.842);
+  background-color: white;
+}
+
+button:hover {
+  background:  rgba(18, 122, 148, 0.842); 
+  color: white;
+}
+
+.subscribe {
+  padding-top: 130px;
+}
+  /* Style the footer */
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #copy {
+    float: left;
+    font-size: 12px;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  @media all and (max-width: 1000px) { 
+    .nav ul { flex-wrap: wrap; }
+    .nav li { flex: 1 1 50%; }
+    .motto {display: none;} 
+    .heading {padding-top: 20px;}
+  }
